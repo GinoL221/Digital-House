@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "brand": "Olmo",
+        "model": "Regal",
+        "road": 29,
+        "year": 2022,
+        "colour": "roja",
+        "weight": 16,
+        "type": "Montañera",
+        "value": 120000,
+        "sold": true
+    },
+    {
+        "id": 2,
+        "brand": "Shifter",
+        "model": "FM18F29AM210",
+        "road": 16,
+        "year": 2019,
+        "colour": "verde",
+        "weight": 17,
+        "type": "Paseo",
+        "value": 115000,
+        "sold": false
+    },
+    {
+        "id": 3,
+        "brand": "Fixie",
+        "model": "Techno",
+        "road": 26,
+        "year": 2020,
+        "colour": "gris",
+        "weight": 15,
+        "type": "Retro",
+        "value": 137000,
+        "sold": false
+    },
+    {
+        "id": 4,
+        "brand": "SLP",
+        "model": "Ruta",
+        "road": 29,
+        "year": 2021,
+        "colour": "Celeste",
+        "weight": 17,
+        "type": "Triatlón",
+        "value": 106000,
+        "sold": false
+    }
+]
