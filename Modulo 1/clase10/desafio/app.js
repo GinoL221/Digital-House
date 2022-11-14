@@ -1,10 +1,10 @@
 const { notEqual } = require("assert");
 
 let dhBicy = {
-
+    // 2 - a
     bicycles: require("./dataBicycles"),
     buscarBici: function (idABuscar) {
-        let bicycle = this.bicycles.filter(bicycle => bicycle.id == idABuscar);
+        let bicycle = this.bicycles.find(bicycle => bicycle.id == idABuscar);
         return bicycle;
     },
     // 2 -c
@@ -27,3 +27,4 @@ let dhBicy = {
         let totalSold = bicycleSold.reduce((total, now) => total + now.value, 0);
     }
 }
+console.log(dhBicy.buscarBici(1))
