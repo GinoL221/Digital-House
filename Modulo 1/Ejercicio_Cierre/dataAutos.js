@@ -1,4 +1,5 @@
 let autosImportados = require("./autos");
+let personaImportadas = require("./personas")
 
 let concesionaria = {
    autos: autosImportados,
@@ -51,25 +52,17 @@ let concesionaria = {
    },
    // autosQuePuedeComprar recibe un objeto persona y devuelve una array de autos que la persona puede comprar
    autosQuePuedeComprar: function (persona) {
-      let autosPuedeComprar = []
+      let autosPermitidoComprar = []
       let autosEnVenta = this.autosParaLaVenta();
-      for (let i = 0; i < autosEnVenta.length; i++) {
-         if (this.puedeComprar(autosEnVenta[i], persona)) {
-            autosPuedeComprar.push(autosEnVenta[i]);
+      autosEnVenta.filter(auto => {
+         if (this.puedeComprar(auto, persona)) {
+            autosPermitidoComprar.push(auto);
          }
-      }
-      //      autosEnVenta.forEach(function (auto) {
-      //         if (this.puedeComprar(auto, persona)) {
-      //            autosPuedeComprar.push(auto);
-      //         }
-      //      })
-      return autosPuedeComprar;
+      })
+      return autosPermitidoComprar;
    }
 }
 
 let persona = personaImportadas;
-console.log(concesionaria.listaDeVentas())
-//concesionaria.venderAuto("JJK116");
-//console.log(concesionaria.listaDeVentas());
-//console.log(concesionaria.totalDeVentas())
-//console.log(concesionaria.autosQuePuedeComprar(persona))
+
+console.log(concesionaria.autosQuePuedeComprar(persona))
