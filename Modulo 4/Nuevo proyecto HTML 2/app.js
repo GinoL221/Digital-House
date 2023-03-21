@@ -7,7 +7,7 @@ const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath));
 
 //Puerto en el que corre el servidor
-app.listen(3000, () => { console.log("El servidor esta corriendo en https://localhost:3000"); });
+app.listen(3000, () => { console.log("El servidor esta corriendo en http://localhost:3000"); });
 
 //Definon el home de la pagina
 app.get('/', (req, res) => {
