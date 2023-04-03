@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const mainRouter=require('./routers/main');
+const mainRouter=require('./routers/main')
 
 app.use(express.static('public'));
 
