@@ -1,4 +1,4 @@
-let perfil = "Invitado";
+const perfil = "Invitado";
 
 switch (perfil.toLowerCase()) {
     case "administrador":
