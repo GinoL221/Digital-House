@@ -60,7 +60,7 @@ let mostaza = true;
 let tomate = true;
 let lechuga = true;
 let cebolla = false;
-let adicionales = [jamon, queso, salsaTomate, mayonesa, mostaza, tomate, lechuga, cebolla]
+let adicionales = [jamon, queso, salsaTomate, mayonesa, mostaza, tomate, lechuga, cebolla];
 
 //console.log(pagarCliente(hamburguesa,adicionales));
-console.log(mensajeUsuario(nombre,apellido,pagarCliente,hamburguesa,adicionales));
+console.log(mensajeUsuario(nombre, apellido, pagarCliente, hamburguesa, adicionales));

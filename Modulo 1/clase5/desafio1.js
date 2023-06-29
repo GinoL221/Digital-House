@@ -1,3 +1,21 @@
+/*
+1. Crea una carpeta de trabajo y dentro de ella crea un archivo JavaScript (.js).
+2. Crea una función que permita calcular el monto a pagar por el alquiler de un
+vehículo, que reciba como parámetros: “tipo de vehículo”, “Días de alquiler” y “silla
+para bebe”.
+3. Define y realiza los cálculos para obtener el total a pagar, teniendo en cuenta las
+siguientes consideraciones:
+● De acuerdo al tipo de vehículo, se le cobra al cliente un monto por día:
+○ Compacto: $14000
+○ Mediano: $17000
+○ Camioneta: $28000
+● Si adicionalmente el cliente requiere la silla para niños, se le cobra un adicional por día
+de $1200
+4. Una vez creado el programa, ejecutalo. ¿Recuerdas cómo?
+5. Para probar las diferentes respuestas invoca a la función, asigna diferentes valores o
+argumentos. Usando el console.log(), muestra los resultados al usuario:
+*/
+
 function alquilerVehiculo(tipo, dias, sillaBebe) {
     let montoCobrar = 0
     switch (tipo.toLowerCase()) {

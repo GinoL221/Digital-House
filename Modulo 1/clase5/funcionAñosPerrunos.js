@@ -1,3 +1,2 @@
-function añosPerrunos(Anios) {
-    return Anios * 7;
-}
+let aniosPerrunos = anios => anios * 7;
+console.log(aniosPerrunos(1));

@@ -1,3 +1,2 @@
-function tipoVariable(variable){
-    return variable.typeof()
-}
+let tipoVariable = variable => typeof variable;
+console.log(tipoVariable(4));
