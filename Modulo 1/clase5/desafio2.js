@@ -1,5 +1,5 @@
 function mensajeUsuario(nombre, apellido, pagarCliente, tipoHamburguesa, arrayAdicionales) {
-    return "Estimado " + nombre + " " + apellido + ", el monto total a pagar es de: " + pagarCliente(tipoHamburguesa, arrayAdicionales) + "."
+    return "Estimado " + nombre + " " + apellido + ", el monto total a pagar es de: $" + pagarCliente(tipoHamburguesa, arrayAdicionales) + "."
 }
 
 function pagarCliente(tipoHamburguesa, arrayAdicionales) {
