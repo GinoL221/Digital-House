@@ -25,6 +25,7 @@ let dhBicy = {
     totalDeVentas: function () {
         const bicycleSold = this.bicycle.filter(bicycle => bicycle.sold == false)
         let totalSold = bicycleSold.reduce((total, now) => total + now.value, 0);
+        return totalSold;
     }
 }
-console.log(dhBicy.buscarBici(1))
+console.log(dhBicy.biciParaLaVenta());
