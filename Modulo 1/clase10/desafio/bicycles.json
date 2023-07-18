@@ -9,7 +9,7 @@
         "weight": 16,
         "type": "Montañera",
         "value": 120000,
-        "sold": true
+        "sold": false
     },
     {
         "id": 2,

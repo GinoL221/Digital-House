@@ -1,15 +1,13 @@
-const { notEqual } = require("assert");
-
 let dhBicy = {
     // 2 - a
     bicycles: require("./dataBicycles"),
-    buscarBici: function (idABuscar) {
-        let bicycle = this.bicycles.find(bicycle => bicycle.id == idABuscar);
+    buscarBici: function (idASearch) {
+        let bicycle = this.bicycles.find(bicycle => bicycle.id == idASearch);
         return bicycle;
     },
     // 2 -c
-    venderBici: function (idABuscar) {
-        let bicycle = buscarBici(idABuscar);
+    venderBici: function (idASearch) {
+        let bicycle = this.buscarBici(idASearch);
         if (bicycle) {
             bicycle.sold = true;
             return bicycle;
@@ -39,8 +37,10 @@ let dhBicy = {
     },
     // Ejercicio extra - punto 3
     listarTodasLasBici: function () {
-        const total = this.bicycles.forEach(element => console.log(element));
+        this.bicycles.forEach(element => console.log(element));
         return "";
     }
 }
-console.log(dhBicy.listarTodasLasBici());
+
+console.log(dhBicy.venderBici(1));
+dhBicy.listarTodasLasBici();
