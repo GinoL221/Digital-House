@@ -42,5 +42,5 @@ let dhBicy = {
     }
 }
 
-console.log(dhBicy.venderBici(1));
+// console.log(dhBicy.aumentoBici(25));
 dhBicy.listarTodasLasBici();
