@@ -17,4 +17,5 @@ let [num0, , num2, , num3] = array
 
 let objeto = { nombre: "Michifus", tipo: "Gato", color: "Gris", raza: "Sin raza" };
 let { nombre, tipo, color, raza } = objeto;
-console.log(`nombre: ${nombre}, tipo: ${tipo}, color: ${color}, raza: ${raza}`);
+// console.log(`nombre: ${nombre}, tipo: ${tipo}, color: ${color}, raza: ${raza}`);
+console.log(`Hola les presento a mi mascota su nombre es: ${nombre}, es un hermoso ${tipo}, de color: ${color} y su raza es: ${raza}`)
