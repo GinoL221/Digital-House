@@ -60,9 +60,11 @@ let concesionaria = {
          }
       })
       return autosPermitidoComprar;
+      // let autosVendidos = this.autosParaLaVenta();
+      // return autosVendidos.filter((auto, persona) => this.puedeComprar(auto, persona));
    }
 }
 
 let persona = personaImportadas;
 
-console.log(concesionaria.autosQuePuedeComprar(persona))
+console.log(concesionaria.autosQuePuedeComprar(persona));
