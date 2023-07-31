@@ -19,7 +19,7 @@ const figuras = [...data1, ...data2, ...data3];
 let importar = function (marca) {
     let resultado = [];
     for (let i = 0; i < figuras.length; i++) {
-        if (figuras[i].marca.toUpperCase() == marca.toUpperCase()) {
+        if (figuras[i].marca.trim().toUpperCase() == marca.trim().toUpperCase()) {
             resultado.push(figuras[i]);
         }
     }

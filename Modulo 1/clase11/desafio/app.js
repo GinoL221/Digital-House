@@ -16,8 +16,7 @@ const collectibles = {
     listFigures: function () { unifiedCollectibles.forEach(collectable => console.log(collectable)) },
     // Desafio 2 - 5.b
     figuresByBrand: function (brand) {
-        let forBrand = unifiedCollectibles.filter(collectable => collectable.marca == brand)
-        return forBrand
+        return unifiedCollectibles.filter(collectable => collectable.marca.trim().toUpperCase() == brand.trim().toUpperCase())
     }
 }
 
