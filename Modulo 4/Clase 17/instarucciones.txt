@@ -1,5 +1,0 @@
-Crear un servidor en express
-
-1) npm init -y
-2) npm i express
-3) crear una carpeta src y dentro un archivo llamado app.js
