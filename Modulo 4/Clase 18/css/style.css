@@ -1,0 +1,16 @@
+body {
+  background-color: beige;
+}
+h1 {
+  background-color: blue;
+}
+p {
+  font-size: 13px;
+  color: green;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.parrafo {
+  font-size: 18px;
+  color: blueviolet;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
