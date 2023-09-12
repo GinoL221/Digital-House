@@ -3,4 +3,5 @@ const getUserById = require("./getUserById");
 
 module.exports = {
   getAllUsers,
+  getUserById,
 };
