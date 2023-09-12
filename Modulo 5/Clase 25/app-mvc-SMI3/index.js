@@ -3,5 +3,5 @@ const server = require("./src/app");
 const PORT = process.env.PORT || 3001;
 
 server.listen(PORT, () => {
-  console.log(`SErvidor escuchando en puerto ${PORT}`);
+  console.log(`Servidor escuchando en puerto http://localhost:${PORT}`);
 });
