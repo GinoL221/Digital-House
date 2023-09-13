@@ -12,7 +12,9 @@ server.set("view engine", "ejs");
 
 server.use(express.static(path.join(__dirname, "../public")));
 
-server.get("/", (req, res) => res.send("Hola Mundo"));
+server.get("/", (req, res) =>
+  res.sendFile(path.join(__dirname, "../public/html/landing.html"))
+);
 
 server.use(userRoutes);
 server.use(productRoutes);
